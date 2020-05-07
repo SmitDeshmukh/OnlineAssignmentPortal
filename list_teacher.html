@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function change() {
+			window.open('index1.php ');
+			// body...
+		}
+		function endSession() {
+			window.open('logout.php');
+		}
+	</script>
+</head>
+<link rel="stylesheet" type="text/css" href="Css/button.css">
+
+<body>
+	<input type="submit" value="My Courses" name="b1">
+	<br>
+	<input type="submit" value="My Timetable" name="b2">
+	<br>
+	<div class="dropdown">
+		<input type="submit" value="Assignments">	
+		<div class="dropdown-content">
+		<button onclick="change()">Create</button>
+		<button onclick="change()">Grade Grid</button>
+		<button>View Assignments</button>
+	</div>
+</div>
+	<br>
+	<input type="submit" value="View Submitted Assignments" name="b4">
+	<br>
+	<input type="submit" value="Student Reports" name="b5">
+	<br>
+	<input type="submit" value="Submit Report" name="b6" >
+	<br>
+	<input type="submit" value="Logout" name="b7" onclick="endSession()">
+	<br>
+	<input type="submit" value="Change_Password" name="b8">
+</body>
+</html>
+

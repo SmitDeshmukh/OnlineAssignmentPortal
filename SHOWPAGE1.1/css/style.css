@@ -1,0 +1,862 @@
+/*
+
+	SHOWPAGE FREE TEMPLATE BY IAMSUPVIEW.BE
+	
+	01. Font Face
+	02. Generals Settings
+	03. Navigation Settings
+	04. Page1 / Header Section Settings
+	05. Page2 Section Settings
+	06. Page3 Section Settings
+	07. Page4 Section Settings
+	08. Page5 Settings
+	09. Preloading Effect
+	10. Footer Settings
+	11. PRE CODE
+	12. Modal Settings
+	13. Media Queries Settings
+			
+*/
+
+
+
+
+
+/* 01. FONT FACE ================================================== */
+
+
+@font-face
+{
+  font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Source Sans Pro ExtraLight"), local("SourceSansPro-ExtraLight"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGEzfSP8PFPIaW8d4wHl9LSw.woff") format("woff");
+}
+
+@font-face
+{
+  font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlDLXPPWpYIJRcQ99gLLWTOQ.woff") format("woff");
+}
+
+@font-face
+{
+  font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGNF2eBBnhZOFf_rblGEjGiI.woff") format("woff");
+}
+
+@font-face
+{
+  font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGBgDywzySrQSFSEUM6OqW_g.woff") format("woff");
+}
+
+
+	
+/* 02. GENERALS SETTINGS ================================================== */
+
+
+body, html
+{
+  background: #E2E4E7;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+
+/* Selected text Color */
+
+::-moz-selection
+{
+  background: none;
+  color: #74BEE1;
+}
+
+::selection
+{
+  background: none;
+  color: #74BEE1;
+}
+
+.centered
+{
+  text-align: center;
+}
+
+b, strong
+{
+  font-weight: 800;
+}
+
+/* Make a space */
+
+.space
+{
+  padding: 20px 0;
+}
+
+h1
+{
+  font-size: 46px;
+  font-weight: 100;
+  text-transform: none;
+  line-height: 46px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 0.33em;
+  margin-bottom: 0.33em;
+}
+
+h2
+{
+  font-size: 46px;
+  font-weight: 100;
+  line-height: 46px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 0.33em;
+}
+
+h3
+{
+  font: 38px 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  padding-bottom: 25px;
+  padding-top: 0px;
+  color: #202529;
+}
+
+h4
+{
+  font: 32px 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+
+h5
+{
+  font: 24px 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  font-weight: 100;
+  color: #FFF;
+}
+
+span
+{
+  color: #303333;
+  font: 1.5em 'Source Sans Pro', sans-serif;
+  opacity: 0.4;
+  padding-top: 0px;
+}
+
+/* Link */
+
+a
+{
+  color: #46484a;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover
+{
+  color: #181b1e;
+}  
+	
+/* Paragrah */
+
+p
+{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: #98999C;
+  line-height: 30px;
+}
+
+p a
+{
+  border-bottom: 1px dotted #46484a;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+p a:hover
+{
+  border-bottom: 1px dotted #181b1e;
+}
+
+/* Button White */
+
+.button-white
+{
+  border-radius: 20px;
+  color: #333;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background: #FFF;
+  font-weight: 600;
+  border: 3px solid #FFF;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Button White:hover */
+
+.button-white:hover
+{
+  color: #FFF;
+  border: 3px solid #FFF;
+  background: none;
+}
+
+/* Button Blue */
+
+.button-blue
+{
+  border-radius: 20px;
+  color: #FFF;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background: #74bee1;
+  font-weight: 600;
+  border: 3px solid #74bee1;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Button Blue:hover */
+
+.button-blue:hover
+{
+  color: #74bee1;
+  border: 3px solid #74bee1;
+  background: none;
+}
+
+
+/* Button Green */
+
+.button-green
+{
+  border-radius: 20px;
+  color: #FFF;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background: #95d074;
+  font-weight: 600;
+  border: 3px solid #95d074;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Button Green:hover */
+
+.button-green:hover
+{
+  color: #95d074;
+  border: 3px solid #95d074;
+  background: none;
+}
+
+
+
+
+/* 03. NAVIGATION SETTINGS ================================================== */
+
+
+nav #logo
+{
+  float: left;
+  z-index: 99999;
+  position: relative;
+  left: 50px;
+}
+
+nav
+{
+  z-index: 999;
+  width: 100%;
+  height: 80px;
+}
+
+
+/* The main navigation bar */
+
+#nav
+{
+  width: 100%;
+  position: relative;
+  right: 50px;
+ /* The menu will take the width of its container */
+  ;
+}
+
+/* The main navigation links */
+
+#nav>li>a
+{
+	/* Layout */
+  display: block;
+	/* Typography */
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  float: right;
+  color: #FFF;
+  opacity: 1;
+  position: relative;
+  padding: 20px 15px;
+  text-decoration: none;
+}
+
+/* The hover state of the links */
+
+#nav li:hover a, #nav li .selected
+{
+  color: rgba(255,255,255,0.60);
+}
+
+ 
+/* Navigation Fixed */ 
+ 
+.cbp-af-header
+{
+  font-family: 'Source Sans Pro', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  height: 80px;
+  overflow: hidden;
+  -webkit-transition: height 0.6s;
+  -moz-transition: height 0.6s;
+  transition: height 0.6s;
+}
+
+.cbp-af-header #logo img
+{
+  padding: 40px 20px 0px 0px;
+  max-width: 150px;
+}
+
+.cbp-af-header #nav a
+{
+  line-height: 60px;
+}
+
+/* Transitions */
+
+.cbp-af-header #logo,
+.cbp-af-header #nav a
+{
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+/* Button Share */
+
+.cbp-af-header .right
+{
+  border-radius: 20px;
+  color: #333;
+  margin-top: -100px;
+  padding: 3px 13px;
+  float: right;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Button Share:hover */
+
+.cbp-af-header .button:hover
+{
+  color: #FFF;
+  border: 3px solid #FFF;
+  background: none;
+}
+
+
+/* Navigation effect on scroll down */
+
+
+.cbp-af-header.cbp-af-header-shrink
+{
+  height: 80px;
+  float: right;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* The button comes to the right place */
+
+.cbp-af-header.cbp-af-header-shrink .right
+{
+  margin-top: 30px;
+  display: block;
+}
+
+/* The links goes up */
+
+.cbp-af-header.cbp-af-header-shrink #nav a
+{
+  margin-top: -150px;
+}
+	
+
+
+/* 04. PAGE 1 / HEADER SETTINGS ================================================== */
+
+
+
+.page1
+{
+  background: url('../img/bg.jpg')#131313;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.page1 h1
+{
+  color: #FFF;
+}
+
+
+/* Don't display the logo for Phone */
+
+.logo-phone {display: none;}
+
+/* Huge Title */
+
+.huge-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 180px;
+}
+
+/* Go down text & Button */
+
+.go-down {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+}
+
+
+/* 05. PAGE 2 SETTINGS ================================================== */
+
+
+
+.page2 {
+    background: #FFF;}
+
+.page2 .row {
+	position: relative;  
+	border-bottom: 1px solid #e7e9eb;   
+	padding: 80px 0 80px 0;}
+
+
+/* Image */
+
+.page2 .picture {
+	position: relative; 
+	width: 100%;  
+	overflow: hidden; 
+	float: right; }
+
+
+/* Article */
+
+.page2 .article {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    left: 0%;
+}
+
+
+
+/* 06. PAGE 3 SETTINGS ================================================== */
+
+
+
+
+.page3 {
+    background: #FFF;}
+
+.page3 .row {
+	position: relative; 
+	border-bottom: 1px solid #e7e9eb;  
+	padding: 80px 0;}
+
+/* Image */
+
+.page3 .picture {
+	position: relative; 
+	width: 100%;  
+	overflow: hidden;  }
+
+/* Article */
+
+.page3 .article {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    right:0;
+}
+
+
+
+
+/* 07. PAGE 4 SETTINGS ================================================== */
+
+
+
+.page4 {
+    background: #FFF; }
+
+.page4 .row {
+	position: relative; 
+	padding: 80px 0; }
+
+/* Image */
+
+.page4 .picture {
+	position: relative; 
+	width: 100%;  
+	overflow: hidden; 
+	float: right; }
+
+/* Article */
+
+.page4 .article {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 220px;
+    left: 0%;
+}
+
+
+
+/* 08. PAGE 5 SETTINGS ================================================== */
+
+
+.page5 {
+    background: #f1f3f4;
+    padding: 80px 0;}
+
+.page5 h1 {font-size:240px;}
+
+
+
+
+/* 09. PRELOADING  ================================================== */
+    
+
+/* Preloader Effect */
+
+#preloader {
+    background-color: #FFF;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999999;
+}
+
+/* Preloading Animation */
+
+#loading-animation {
+    background-image: url("../img/loading.gif") ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    border-radius: 4px;
+}
+
+
+/* 10. FOOTER SETTINGS  ================================================== */
+
+
+
+.footer {
+    background: #181b1e;
+    padding: 30px 0;}
+
+.footer .row {position: relative;}
+
+.footer ul {padding:40px 0;}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.footer ul li a {color: #FFF;}
+
+.footer ul li a:hover {color: rgba(255,255,255,0.70);}
+
+.footer .copyright {
+    opacity: 0.8;
+}
+
+.footer .logo {
+	opacity: 0.4;
+	width:80px;
+	padding: 40px 0 0 0;
+}
+
+.footer p a {color: rgba(255,255,255,0.70);}
+.footer p a:hover {color: rgba(255,255,255,1);}
+
+
+/* 11 PRE CODE ================================================= */
+
+
+pre {
+	background: #333; 
+	font-size: 12px; 
+	line-height: normal; 
+	border: 10px solid #f1F3F4; 
+	padding: 20px; 
+	color:#ecd565;}
+
+
+/* 12 MODAL SETTINGS ================================================= */
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  background-color: rgba(24,27,30,0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 250ms, opacity 250ms ease-in-out;
+  z-index: 999;
+  cursor: pointer;
+}
+.modal::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.modal.is-visible {
+  transition-delay: 0s;
+}
+.modal-content {
+  display: inline-block;
+  width: auto;
+  text-align: left;
+  box-shadow: 0 0 0.0em rgba(0, 0, 0, 0.25);
+  vertical-align: middle;
+  cursor: auto;
+  transition: transform 250ms ease-in-out;
+  -webkit-backface-visibility: hidden;
+}
+.modal-close {
+  height: 2em;
+  width: 2em;
+  text-align: center;
+}
+.modal-anim--one {
+  transform: translateY(3em) scale(0.95);
+}
+.is-visible .modal-anim--one {
+  transform: translateY(0) scale(1);
+}
+.modal-anim--two {
+  transform: translateX(-35em) rotate(23deg);
+}
+.is-visible .modal-anim--two {
+  transform: translateX(0) rotate(0);
+}
+.modal-anim--three {
+  transform: scale(1.5);
+}
+.is-visible .modal-anim--three {
+  transform: scale(1);
+}
+.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+/* 13. MEDIA QUERIES  ============================================ */
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+.page2, .page3, .page4, .page5 {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.picture {display: none;}
+
+.page1 .button-white {display: none;}
+
+
+h2 {font-size: 42px;}
+
+h3 {font-size:32px;}
+
+.logo-phone {display: block; width: 50%; margin: auto;}
+
+#logo {display: none;}
+
+.cbp-af-header{display: none;}
+
+h1 {font-size:30px;}
+
+.footer ul li {
+    display: block;
+    padding: 10px 0px;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.huge-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 250px;
+    padding:20px;
+}
+
+.page2 .columns, .page3 .columns, .page4 .columns {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+}
+
+/* Media Queries for iPad in Portrait */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+.page2 .columns, .page3 .columns, .page4 .columns {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+}
+
+.row .six.columns, .row .four.columns {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+}
+
+.picture {display: none;}
+
+.page1 .button-white {display: none;}
+
+
+
+ }
+
+
+
+

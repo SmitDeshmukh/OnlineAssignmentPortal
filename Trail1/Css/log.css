@@ -1,0 +1,121 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #34495e;
+	background-image: url(bk2.jpg); 
+}
+.mainprojbox
+{
+	width: 300px;
+	padding: 40px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background :#191919;
+	text-align: center;
+}
+.mainprojbox h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.mainprojbox h2{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 40;
+}
+.mainprojbox input[type="text"], .mainprojbox input[type="password"]
+{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid  #3498db;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+.mainprojbox input[type="text"]:focus, .mainprojbox input[type="password"]:focus
+{
+	width: 280px;
+	border-color: #2ecc71;
+}
+.mainprojbox input[type="submit"]
+{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid  #3498db;
+	padding: 14px 40px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.mainprojbox input[type="submit"]:hover
+{
+	background: green;
+}
+/*select {
+			border:0;                      
+            border-radius: 24px;
+            background: black;
+            text-decoration-color: white;
+            text-align: center;
+            outline: none;
+            color: white;
+            border: 2px solid  #3498db;
+	padding: 14px 10px;
+	width: 200px;
+         }
+option
+{
+	border-radius: 24px;
+}
+/*select
+{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid  #3498db;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+*/
+select
+{
+	background-color: black;
+	color: white;
+width:200px;
+padding:14px 10px;
+margin:20px auto;
+font-family:Cursive;
+line-height:1;
+border-radius:25px;
+
+text-decoration-color: white;
+font-size:20px;
+-webkit-appearance:none;
+box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.6);
+outline:none
+}
+select:hover {
+color:white;
+}

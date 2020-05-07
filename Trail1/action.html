@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASSIGNMENT SUBMISSION</title>
+	<script src="widgEditor_1.0.1/scripts/widgEditor.js"></script>
+	<link rel="stylesheet" type="text/css" href="s2.css">
+</head>
+<script>
+function openUp()
+{
+	window.open('Upload.php')
+}
+
+</script>
+
+<body>
+	<center>
+<form  method="post" >
+<div class="form-style-6">
+	<table>
+		<tr>
+			<td>Aim</td><td><input type="text" name="aim"></td>
+		</tr>
+
+		<tr>
+			<td>Course Code :</td><td><input type="text" name="course_code"></td>
+		</tr>
+		<tr>
+			<td>Course :</td><td><input type="text" name="course"></td>
+		</tr>
+		<tr>
+			<td>Assignment No :</td><td><input type="text" name="assi_no"></td>
+		</tr>
+	</table>	
+		
+		
+			<textarea rows="15" cols="30"></textarea>
+		</center>
+		
+	<center>
+	<h3>Upload File With :</h3>
+	
+	<input type="submit" name="edit" value="Editor">
+	 &nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="submit" name="choose_file" value="Choose File" onclick="openUp()">
+</center>
+
+	
+
+
+
+</form>
+
+</body>
+</html>
