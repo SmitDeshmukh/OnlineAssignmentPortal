@@ -1,5 +1,8 @@
 # OnlineAssignmentPortal
-This project is aimed at downloading and uploading online assignments for
+
+Diploma Final Year Project
+Developed using PHP,HTML,CSS,JS,MySql.
+This Portal is aimed at downloading and uploading online assignments for
 students; with each assignment having information about the instructions, description,
 deadline, and submission details. The main goal of this thesis is to design and
 implement online assignment submission they would be able to evaluate assignments
