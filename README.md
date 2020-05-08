@@ -4,7 +4,7 @@
 Developed using PHP,HTML,CSS,JS,MySql.</b><br>
 This Portal is aimed at downloading and uploading online assignments for
 students; with each assignment having information about the instructions, description,
-deadline, and submission details. The main goal of this thesis is to design and
+deadline, and submission details. The main goal of this Project is to design and
 implement online assignment submission they would be able to evaluate assignments
 automatically.<br>
 The system provides an interface for testing assignments such that they
